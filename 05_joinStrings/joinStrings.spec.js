@@ -13,7 +13,7 @@ describe('step 2', () => {
   test('birthYear is 1947', () => {
     expect(values.birthYear).toEqual(1947);
   });
-  test.skip('greeting is properly output', () => {
+  test('greeting is properly output', () => {
     expect(values.greeting).toEqual('Hello! My name is Carlos Stevenson and I am 18 years old.');
   });
 });
