@@ -16,7 +16,7 @@ describe('math', () => {
   test('e is -8', () => {
     expect(e).toEqual(-8);
   });
-  test.skip('f is 68', () => {
+  test('f is 68', () => {
     expect(f).toEqual(68);
   });
 });
