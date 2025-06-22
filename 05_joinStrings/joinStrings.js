@@ -17,7 +17,8 @@ const birthYear = 1947;
 const fullName = firstName + lastName;
 const age = thisYear - birthYear;
 
-const greeting = "Hello! My name is " + firstName + " " + lastName + " and I am " + (thisYear - birthYear) + " years old.";
+// const greeting = "Hello! My name is " + firstName + " " + lastName + " and I am " + (thisYear - birthYear) + " years old.";
+const greeting = "Hello! My name is " + fullName;
 
 // Do not change this
 module.exports = {
