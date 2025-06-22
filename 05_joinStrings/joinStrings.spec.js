@@ -10,7 +10,7 @@ describe('step 2', () => {
   test('thisYear is 1965', () => {
     expect(values.thisYear).toEqual(1965);
   });
-  test.skip('birthYear is 1947', () => {
+  test('birthYear is 1947', () => {
     expect(values.birthYear).toEqual(1947);
   });
   test.skip('greeting is properly output', () => {
