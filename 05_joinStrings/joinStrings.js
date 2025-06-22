@@ -9,7 +9,10 @@
 
 // Add your code right below, good luck!
 
-
+const firstName = "Alan";
+const lastName = "Turing";
+const thisYear = "1954";
+const birthYear = "1912";
 
 
 
