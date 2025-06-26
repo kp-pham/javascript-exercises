@@ -36,7 +36,7 @@ describe('repeatString', () => {
     const number = Math.floor(Math.random() * 1000);
     expect(repeatString('hey', number)).toBe('hey'.repeat(number));
   });
-  test.skip('works with blank strings', () => {
+  test('works with blank strings', () => {
     expect(repeatString('', 10)).toEqual('');
   });
 });
