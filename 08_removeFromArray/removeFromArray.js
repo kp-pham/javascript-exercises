@@ -7,6 +7,8 @@ const removeFromArray = function(array, ...args) {
     }
 
     return array;
+
+    // return array.filter(value => !args.include(value));
 };
 
 // Do not edit below this line
