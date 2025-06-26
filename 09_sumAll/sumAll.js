@@ -1,7 +1,7 @@
 // const { useReducer } = require("react");
 
 const sumAll = function(start, end) {
-    if (typeof(start) != Number || typeof(end) != Number) return "ERROR";
+    if (typeof(start) != 'number' || typeof(end) != 'number') return "ERROR";
     if (Math.floor(start) != start || Math.floor(end) != end) return "ERROR";
     if (start < 0 || end < 0) return "ERROR";
 
