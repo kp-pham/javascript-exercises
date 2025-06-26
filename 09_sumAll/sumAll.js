@@ -1,8 +1,9 @@
 // const { useReducer } = require("react");
 
 const sumAll = function(start, end) {
-    if (start < 0 || end < 0) return "ERROR";
+    if (typeof(start) != Number || typeof(end) != Number) return "ERROR";
     if (Math.floor(start) != start || Math.floor(end) != end) return "ERROR";
+    if (start < 0 || end < 0) return "ERROR";
 
     if (start > end) [start, end] = [end, start];
 
