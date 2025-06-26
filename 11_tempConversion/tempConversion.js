@@ -1,5 +1,6 @@
 const convertToCelsius = function(farenheit) {
-  return parseFloat((farenheit - 32) * (5 / 9)).toFixed(1);
+  celsius = (farenheit - 32) * (5 / 9);
+  return parseFloat(celsius.toFixed(1));
 };
 
 const convertToFahrenheit = function() {
