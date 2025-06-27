@@ -24,6 +24,12 @@ const factorial = function(n) {
 
   else
     return n * factorial(n - 1);
+
+  // let product = 1;
+  // for (let i = n; i > 0; i--) {
+  //   product *= i;
+  // }
+  // return product;
 };
 
 // Do not edit below this line
