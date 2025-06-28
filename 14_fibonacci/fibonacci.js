@@ -1,7 +1,22 @@
 const fibonacci = function(n) {    
-    if (n < 0) return "OOPS";
-    else if (n == 0) return 0;
-    else if (n == 1) return 1;
+    // let count
+    // if (typeof countArg !== 'number') {
+    //     count = parseInt(countArg)
+    // } else {
+    //     count = countArg
+    // }
+
+    // if (count < 0) return "OOPS";
+    // if (count == 0) return 0;
+    
+    if (n < 0) 
+        return "OOPS";
+
+    else if 
+        (n == 0) return 0;
+
+    else if
+        (n == 1) return 1;
 
     let a = 1;
     let b = 1;
