@@ -1,10 +1,12 @@
 const palindromes = function (string) {
+    const LOWERCASED_STRING = string.toLowerCase();
+
     let left = 0;
     let right = string.length - 1;
 
     while (left < right) {
-        let leftCharCode = getCharCode(string, left);
-        let rightCharCode = getCharCode(string, right);
+        let leftCharCode = getCharCode(LOWERCASED_STRING, left);
+        let rightCharCode = getCharCode(LOWERCASED_STRING, right);
 
         if (!isAlphaNumeric(leftCharCode) || !isAlphaNumeric(rightCharCode)) {
             if (!isAlphaNumeric(leftCharCode))
@@ -13,7 +15,7 @@ const palindromes = function (string) {
             if (!isAlphaNumeric(rightCharCode))
                 --right;
         }
-        else if (string[left] != string[right]) 
+        else if (LOWERCASED_STRING[left] != LOWERCASED_STRING[right]) 
             return false;
         else {
             ++left;
