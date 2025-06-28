@@ -1,3 +1,6 @@
+const LOWERCASE_A_ENCODING = 97;
+const LOWERCASE_Z_ENCODING = 122;
+
 const palindromes = function (string) {
     const LOWERCASED_STRING = string.toLowerCase();
 
@@ -15,8 +18,9 @@ const palindromes = function (string) {
             if (!isAlphaNumeric(rightCharCode))
                 --right;
         }
-        else if (LOWERCASED_STRING[left] != LOWERCASED_STRING[right]) 
+        else if (LOWERCASED_STRING[left] != LOWERCASED_STRING[right]) {
             return false;
+        }
         else {
             ++left;
             --right;
@@ -31,7 +35,7 @@ function getCharCode(string, index) {
 }
 
 function isAlphaNumeric(charCode) {
-    return 'a' <= charCode && charCode <= 'z';
+    return LOWERCASE_A_ENCODING <= charCode && charCode <= LOWERCASE_Z_ENCODING;
 }
 
 // Do not edit below this line
